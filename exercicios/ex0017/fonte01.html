@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+           body {
+                 font-family: Arial, Helvetica, sans-serif; 
+                 
+                 /* safe combinations é a combinação de fontes que o navegador vai seguir para fazer a leitura. Se não tiver uma fonte ele pula para a outra ou a última. Mais informações em CSS Font Combination */
+
+                 /* Padrão de medidas de fontes:display:
+
+                  Medidas Absolutas: cm mm in px pt pc
+                  Medidas Relativas: em ex rem vw vh %
+
+                  A recomendação da W3C é usar px e em
+                  
+                  16px geralmente é = 1em
+                  
+                  16px é o padrão de tamanho dos navegadores */
+
+                  font-size: 1em;
+                }
+
+                h1 {
+                   
+                  /*  font-family: 'Work Sans' ;
+                    font-weight: bolder;
+                    font-size: 3em;
+                    font-style: italic;
+
+                    short hand font - uma dica para colocar todas as tags de font na mesma linha, na ordem seguinte:
+                    - font style, font weight, font size, font family */
+
+                    font: italic bolder 3em 'Work Sans', sans-serif;
+                }
+          
+    </style>
+</head>
+<body>
+
+    <h1>Trabalhando com Fontes</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quidem in necessitatibus assumenda velit eius placeat, ipsa voluptate quae alias nesciunt temporibus laborum ipsam ex blanditiis, tenetur quisquam hic laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident culpa corrupti voluptatum blanditiis quibusdam temporibus dolore recusandae quae porro tempora ex quasi nam, doloremque soluta doloribus sequi. Sed, impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatum fuga asperiores totam earum! Distinctio omnis consequuntur officia animi quia veniam sit ipsa excepturi deleniti, at reiciendis iusto veritatis accusamus.</p>
+
+    <h2>Subtítulo do Exercício</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facilis esse velit, consequuntur enim nesciunt cupiditate laboriosam voluptates? Velit dignissimos tenetur vitae sint dicta deserunt eum amet odit, atque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias cumque exercitationem molestiae reprehenderit itaque nam minima eligendi! Blanditiis omnis soluta eligendi harum voluptatem eum maiores quae ab voluptates possimus?</p>
+    
+</body>
+</html>

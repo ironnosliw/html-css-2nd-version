@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+
+
+/* fonte importada do google fonts para uso de destaque */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* fonte especial baixada para usar no projeto */
+@font-face {
+            font-family: 'Android';
+            src: url('../fontes/idroid.otf') format('opentype'); 
+            font-weight: normal;
+}
+
+/* as 5 cores escolhidas para compor a paleta são monocromáticsa e dispostas da mais fraca para a mais forte:
+
+- #c5ebc6
+- #83e1ad
+- #3ddc84
+- #2fa866
+- #1a5c37
+- #063d1e
+
+*/
+
+
+/*  Pseudo classe root todo documento tem. Tudo que for colocado nela serve para todo documento. Toda variávelem css se inicia com -- e sem espaço. Para usá-las deu crtl + espaço que aparece no final da coluna as opções da minha variável de cores */
+
+:root {
+       --cor0: #c5ebc6;
+       --cor1: #83e1ad;
+       --cor2: #3ddc84;
+       --cor3: #2fa866;
+       --cor4: #1a5c37;
+       --cor5: #063d1e;
+
+       --fonte-padrão: Arial, Helvetica, Verdana, sans-serif;
+       --fonte-destaque: Bebas Neue; /* info retirada do google font da área "font family" */
+       --fonte-android: 'Android', cursive;
+}
+
+/* um seletor com * {} significa que engloba todos os elementos da página */
+/* como as margens estão sufocando cada área do projeto, vamos zerar e depois reconfiguramos */
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+   
+
+body {
+      background-color: var(--cor0);
+      font-family: var(--fonte-padrão);
+}
+
+a.externo::after { 
+                  content:'\00A0\1F517'; 
+                  /* le-se: depois de todo link (a) externo (.) será colocado o simbolo representado pelo código \1f517 e antes dele um espaço representado pelo código \00A0 */
+}
+
+header {
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+        min-height: 150px;
+        text-align: center;
+        padding-top: 40px;
+        /* ao invés da configuração dura de background-color: var(--cor4) faremos um degradê como acima */
+
+}
+
+header > h1 {
+             color: white;
+             font-family: var(--fonte-destaque);
+             font-size: 3em;
+             font-weight: normal;
+             margin-bottom: 20px;
+             text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+            color: white;
+            font-size: 1.2em;
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav {
+     background-color: var(--cor5);
+     padding: 10px;
+     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.374);
+}
+
+nav > a {
+         color: var(--cor0);
+         padding: 10px;
+         border-radius: 5px;
+         text-decoration: none; /* para perder o sublinhado */
+         font-weight: bold;
+}
+
+nav > a:hover { /* o link (a) dentro de nav terá a pseudo-classe hover, para qdo o mouse passar em cima mudar de cor */
+               background-color: var(--cor3);
+               color: var(--cor5);
+               transition-duration: .75s; /* duração do efeito ao passar o mouse */
+               
+}
+
+main {
+      background-color: white;
+      min-width: 300px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
+      margin-bottom: 30px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+}
+
+main p { 
+      margin: 15px 0px;
+      text-align: justify;
+      text-indent: 30px; /* para dar o espaço no paráfrafo */
+      font-size: 1em;
+      line-height: 2em; /* altura da linha */
+   }
+
+main strong {
+                color:var(--cor4);
+                font-weight: bolder;           
+   }
+
+main a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--cor5);
+        background-color: var(--cor1);
+        padding: 2px 6px;
+}
+
+main a:hover {
+              text-decoration: underline;
+              color: var(--cor4);
+}
+
+main h1 {
+         color: var(--cor5);
+         font-family: var(--fonte-android);
+         font-weight: normal;
+         font-size: 1,8em;
+}
+
+main h2 {
+         font-family: var(--fonte-android);
+         color: var(--cor4);
+         font-size: 1.3em;
+         font-weight: normal;
+         background-image: linear-gradient(to right, var(--cor1), transparent);
+         text-indent: 8px;
+}
+
+main img {
+            width: 100%;
+}
+
+main img.pequena {
+                 max-width: 350px;
+                 display: block;
+                 margin: auto;
+}
+
+.embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: var(--cor5);
+      
+     }
+     .embed-container iframe, .embed-container object, .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+     }
+     
+
+aside {
+       background-color: var(--cor1);
+       padding: 10px;
+       border-radius: 10px;
+       box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.209);
+}
+
+aside > ul {
+              list-style-position: inside; /* coloca os marcadores da listra dentro do corpo do documento mas não é compatível com todo navegador*/
+              columns: 2;
+              list-style-type: '\2714\00A0\00A0'; /* no emojipedia procuramos por "check" que são os marcadores de ticagem. Copiamos o número do código e colocamos entre aspas e com a barra inclinada para a esquerda. Cada conjunto de 00A0 me dará um espaço para afastar a ticagem e ficar mais harmônico*/
+}
+
+aside h3 {
+          background-color: var(--cor4);
+          color: white;
+          padding: 10px;
+          margin: -10px -10px 0px -10px;
+          border-radius: 10px 10px 0px 0px;
+}
+
+
+
+footer {
+        background-color: var(--cor5);
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        padding: 5px;
+}
+
+footer a {
+          color: white;
+          font-weight: bolder;
+          text-decoration: none;
+}
+
+footer a:hover {
+                text-decoration: underline;
+                color: var(--cor1);
+}
+
+
+
+
+

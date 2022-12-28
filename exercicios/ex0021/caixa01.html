@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+
+<style>
+
+        /* h1 exemplo de box level */
+
+        h1 {
+            background-color: gray;
+            height: 100px;
+            width: 300px;
+
+
+            /* essas propriedades de border abaixo são as mais usadas, e podemos simplificá-las com uma "short hand".
+            border-width: 10px;
+            border-style: solid;
+            border-color: crimson; */
+
+            border: 10px solid crimson;
+
+            
+            
+            /* existe um "short hand que substitue as propriedades abaixo:"
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /* qdo os 4 valores de padding forem iguais, podemos usar apenas 1 valor apenas */
+
+            padding: 10px;
+
+            
+            /* usamos um "short hand" para simplificar nossas informações de margem.
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+
+            margin: 20px 20px 40px 20px;
+
+            /* outline é a região entre a borda e a margem. Usamos tbm um "short hand" que atende às exigências.
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color:salmon ; */
+
+            outline: 5px dashed salmon;
+        }
+
+       
+
+
+          /* tag a exemplo de inline level */
+          
+        a {
+            
+            /* simplifcamos com uma "short hand":
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue; */
+
+            border: 10px solid blue;
+
+            
+            /* simplifcamos com uma "short hand."
+            
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+
+            margin: 10px;
+        }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- em nossa página aberta no google vamos inspecionar nosso código através do dev tools e de sua caixa padrão, que fornecerá os códigos do google e a possibilidade de simulação através da nossa mudança de estilo -->
+
+    <h1>Exemplo de caixa box level</h1>
+
+    <p>Parágrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline level.</a> Veremos como funciona. </p>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* em HTML íd e em CSS é # */
+/* em HTML class e em CSS é . */
+/* o id é único. Para cada elemento um id - O class é múltiplo. Pode ser usado em vários elementos ao mesmo tempo */
+/* usar nome no class de acordo com a funcionalidade e não como sua aparência */
+/* não usar o uso de acentos com o seletor de classe */
+/* envelopo uma trecho de texto (contr + shift + p) com a tag span e adiciono uma class qquer, por exemplo "basico", logo o trecho envelopado herdará a característica de da classe. */
+/* posso ter mais de uma classe ao um elemento, separadas por um espaço - sem vírgula. Ex.: basico destaque */
+/* posso ter um id e uma classe juntas, mas o id se sobrepõe ao class */
+
+
+
+body {
+
+      background-color: rgb(194, 241, 241);
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 54, 54);
+}
+
+
+h1#principal {
+              background-color: rgb(4, 54, 54);
+              color: white;
+              text-align: center;
+
+
+/* a descrição desse seletor especial poderia ser apenas #principal */
+
+}
+
+
+
+h2 {
+    color: rgb(23, 135, 135);
+}
+
+.basico {
+         color: rgb(7, 218, 25);
+         
+}
+
+.intermediario {
+               color: rgb(199, 236, 13);
+}
+
+.avancado {
+           color:  rgb(148, 9, 18);
+}
+
+.destaque {
+           font-style: italic;
+}

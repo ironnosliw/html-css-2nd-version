@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+
+    <style>
+           body {
+                 background-color: gray;      
+           }
+
+           main {
+                 background-color: white;
+                 padding: 20px;
+                 border-radius: 10px;
+
+                 min-width: 280px;
+                 max-width: 800px;
+                 margin: auto;
+           }
+
+
+
+    </style>
+
+</head>
+<body>
+    <main>
+          <h1>Testando Responsividade</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa accusantium, quo saepe tempora, recusandae a minima neque itaque corrupti natus alias perspiciatis dolor tenetur reprehenderit architecto doloremque ut quisquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate aliquid vero quam neque! Voluptas iste porro provident, aliquam aut at ad deleniti totam mollitia ipsam! Dolores reiciendis sunt quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint, facere corporis excepturi quas at. Distinctio qui, enim fuga soluta totam, tenetur itaque aliquid, recusandae quaerat quisquam sed nemo. Ipsam!</p>
+
+
+          /* Uma maneira de ajustar a Responsividade de uma tela é criando uma classe main e estabelecendo os limites min e max da rolagem de tela. A segunda maneira é envelopando a tag img com uma tag picture o q permitirá outro source com a medida máxima, por exemplo, e fazendo com q chegando-se em 800px a imagem utilizada será a menor - para telas pequenas */
+          <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina"></picture>
+
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa accusantium, quo saepe tempora, recusandae a minima neque itaque corrupti natus alias perspiciatis dolor tenetur reprehenderit architecto doloremque ut quisquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate aliquid vero quam neque! Voluptas iste porro provident, aliquam aut at ad deleniti totam mollitia ipsam! Dolores reiciendis sunt quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint, facere corporis excepturi quas at. Distinctio qui, enim fuga soluta totam, tenetur itaque aliquid, recusandae quaerat quisquam sed nemo. Ipsam!</p>
+    </main>
+</body>
+</html>

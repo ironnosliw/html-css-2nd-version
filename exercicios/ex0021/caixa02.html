@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags / Tags de Agrupamento</title>
+
+    <Style>
+           body {
+                 font-family: Arial, Helvetica, sans-serif;
+                 background-color: dimgray;
+                 margin: 0px;
+           }
+
+           header {
+                  background-color: white;
+                  padding: 10px;
+                  margin: 10px;
+           }
+
+           nav {
+                background-color: rgb(124, 122, 122);
+                padding: 3px;
+                box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.495);
+
+
+                /* duas maneiras de fazer o box shadow. A primeira é põr os valores manualmente e a segunda maneira é através do auxílio do dev tols. Como ? por exemplo, selecione a seção nav no dev tools e abrir a seção add box shadow que vai abrir uma tela e vc vai escolher o ponto da sombra. Toda sombra é a soma do preto com transparência, portanto colocar a 50% de transparência sempre na cor */
+                
+           }
+
+           nav > a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    margin-right: 30px;
+                    
+           }
+
+           nav > a:hover {
+                          text-decoration: underline;
+           }
+
+        
+
+           main {
+                 background-color: white;
+                 padding: 10px;
+                 margin: 10px;
+                 border-radius: 10px 0px;
+                 box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.438)
+           }
+
+                 /* é possível colocar valores diferentes para cada lado da borda (border), ou parâmetros duplos 2 para cada lado oposto como acima */     
+
+           article {
+                    background-color:;
+                    padding: 5px;
+
+           }
+
+           article > aside {
+                            background-color: rgb(165, 165, 165);
+           }
+
+           footer {
+                   background-color: black;
+                   color: white;
+                   text-align: center;
+                   padding: 1px;
+                   margin: 0px;
+           }
+
+           footer > p {
+                       margin: 0px;
+           }
+
+
+
+    </Style>
+</head>
+<body>
+      <header>
+              <h1>Meu Site</h1>
+
+              <nav>
+                   <a href="#">Link</a>
+                   <a href="#">Link</a>
+                   <a href="#">Link</a>
+                   <a href="#">Link</a>
+                   <a href="#">Link</a>
+              </nav>
+
+      </header>
+      <main>
+            <section id="assuntos">
+
+                                   <p>Esportes Política e Tecnologia</p>
+            </section>
+
+            <section id="notícias">
+                                <article>
+                                         <h2>Notícias sobre o Brasil</h2>
+
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos non, dolor vitae amet quisquam fugiat libero quis distinctio nostrum. Quos, maxime rem maiores aliquam debitis magnam exercitationem quis molestias consequuntur.</p>
+
+                                        <aside>
+                                            <p>Artigo escrito por Wilnor</p>
+                                        </aside>
+
+                                </article>
+
+            </section>
+
+
+
+
+
+
+      </main>
+      <footer>
+
+     <p>Desenvolvido por Ironnoliw</p>
+
+      </footer>
+</body>
+</html>
