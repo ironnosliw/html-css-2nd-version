@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+
+    /* Para centralizar um elemento horizontalmente e verticalmente na tela são necessários os seguintes passos: configurar um contêiner - <conteiner > e um conteúdo - <article>. Em seguida configurar a "position" do contêiner como "relative" e do conteúdo como "absolute". Com isso podemos dar valor para a propriedade "top" e 'left' fixando-as em 50%.
+
+     Para afinal mudar a posição do conteúdo, com essa configuração posso usar a propriedade "transform" com o valor "translate". Valores negativos farão o movimento para a esquerda e para cima, valores positivos farão o movimento para cima e para baixo. */
+    
+
+
+        #conteiner {
+                    background-image: url('imagens/target001.png');
+                    background-size: 100% 100%;
+                    position: relative;
+                    height: 96vh; /* 96% da altura da página */
+                    background-color: purple;
+                    padding: 10px;
+
+        }
+
+        #conteudo {
+                   background-image: url('imagens/target001.png');
+                   background-size: 100% 100%;
+                   position: absolute;
+                   height: 200px;
+                   background-color: yellow;
+                   width: 400px;
+                   left: 50%;
+                   top: 50%;
+                   transform:translate(-50%, -50%) ;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+
+
+        <article id="conteudo">
+
+        </article>
+
+
+    </section>
+    
+</body>
+</html>
