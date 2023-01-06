@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iFrame</title>
+
+    <style>
+        iframe {
+                width: 400px;
+                height: 400px;
+                border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o Uso de um iFrame</h1>
+
+   <!-- Uma maneira de criar um link é envelopando a palavra chave com a tag a e colocando uma url. <p>Acessando o Site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a> para aprender à programar</p> Outra maneira é usando iframes. -->
+
+   <!-- Podemos usar o iframe e em seguida um link com tag a. Se não abrir com um abre com outro -->
+
+   <!-- O tamanho padrão de um iframe é de 300x150 mas pode ser mudado através das propriedades de altura e largura ou através das css; sendo que as css são soberanas como o exemplo acima na tag de estilo-->
+
+   <!-- o frameborder o padrão é 0 ou 1, podendo ser configurada a borda na css como acima -->
+   <p>Acessando o Site do 
+
+    <iframe src="https://www.cursoemvideo.com" frameborder="1"></iframe>
+            <a href="https://www.cursoemvideo.com" target="_blank"> cursoemvideo</a>
+    
+      para aprender a programar</p>
+
+
+      <p>O site do <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe> <a href="https://gustavoguanabara.github.io"></a> github</p>
+
+     
+
+      <p>O site do
+        
+        <iframe src="https://google.com.br" frameborder="0"></iframe>
+        
+        é muito legal, pena que não funciona com iframe.</p>
+
+        <!-- atualizando vemos que não carregou o site do google brasil, pq alguns sites tem proteção para q seu contato não seja exibido em iframes por sites de terceiros -->
+    
+</body>
+</html>
