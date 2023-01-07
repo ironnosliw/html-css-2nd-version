@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de iframes</title>
+
+    <style>
+        body {
+             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+                     width: 90vw;
+                     height: 400px;
+                     border: 2px solid black;
+
+        }
+
+
+    </style>
+</head>
+<body>
+   <h1>faça uma escolha</h1>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore dolor explicabo doloremque veritatis ab debitis tenetur. Nemo impedit eligendi, fugit a enim ex dolor expedita recusandae magnam velit libero vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, eaque numquam quibusdam nobis aperiam rerum? Minima dolor iure tempora sint illum nostrum, perspiciatis fuga ipsam, dignissimos quibusdam unde. Veritatis, mollitia!</p>
+
+   <ul>
+      <li><a href="paginas extras/pag001.html" target="frame"> primeira pagina</a></li>
+      <li><a href="paginas extras/pag002.html" target="frame"> segunda pagina</a></li>
+      <li><a href="paginas extras/pag003.html" target="frame"> terceira pagina</a></li>
+   </ul>
+
+<!-- para que o links acima funcionem devidamente, após o link deve haver um target com valor apontando para o valor "name" na tag de <iframe> -->
+
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quisquam voluptates sit et provident, dolorem eaque facere ducimus placeat delectus recusandae repellat magnam veritatis ex, asperiores maiores, incidunt adipisci corporis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt quasi deserunt illum eligendi adipisci deleniti ad ipsum harum sed provident? Illum ad cupiditate suscipit quisquam in? Labore quidem tempora cum.</p>
+
+   <iframe id="tela" name="frame" srcdoc="<h1> escolha uma das opções acima</h1><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga veritatis in dolor, deserunt necessitatibus ipsum ducimus dolores facilis provident itaque nihil debitis. Eius odit eos nostrum non maiores dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum animi labore. Alias accusantium deserunt at, consectetur ipsam vitae ex praesentium reprehenderit nulla repellendus! Delectus suscipit nisi molestiae porro fugiat.</p><img src='imagems/w.ico'> "></iframe>
+   <p>seu navegar não é compativel</p>
+
+    <!-- o valor do  parâmetro srcdoc acima permitirá que o iframe receba informações de html e css como p.e. h1, p, img, etc, não o deixando vazio -->
+
+
+    
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa perferendis inventore distinctio excepturi alias corrupti autem maiores soluta deserunt! Itaque adipisci repellat, tempora ipsum eligendi ipsa sunt amet dolorem architecto! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, repellat autem, cum labore similique dolores culpa quo laboriosam atque, aliquid amet rem qui tempora corrupti consectetur quas sint dicta error?</p>
+</body>
+</html>
