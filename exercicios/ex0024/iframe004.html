@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>meu site principal
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio magnam sed nihil modi ratione accusantium voluptas quis eligendi officiis, provident facilis accusamus cumque laborum dolorem placeat eius ad. Omnis, reiciendis.</p>
+
+        <iframe src="paginas extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+
+            seu navegador não é compativel com isso ...
+
+         /* com a configuração sandbox acima autorizo formulários, scripts e material de mesma origem; os demais estão bloqueados */
+
+          /* o valor same origin para sandbox autoriza desde a pasta esteja na mesma origem/servidor */
+
+          /* A propriedade sandibox com o valor sandibox bloqueia uma proteçao um pouco maior com relação a ataques */
+          /* 2a. maneira de proteção é usar o propriedade referrerpolicy com o valor no-referrer, que vai bloquear a coleta de informações do usuário pelo iframe */
+
+        </iframe>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nam officiis quod expedita quam aliquam? Minus repudiandae nostrum error numquam consectetur est? Temporibus repellat ut distinctio praesentium qui hic illum.</p>
+    </h1>
+</body>
+</html>
