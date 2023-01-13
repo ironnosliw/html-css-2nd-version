@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Meu Primeiro Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off"></form>
+
+        <!--a função method com o valor post suprimi o aparecimento de dados na url, já o valor get a expõe
+        
+        o uso do valor get é para informações corriqueiras, secundárias;
+        o uso do valor post é para dados sensíveis como fotos, vídeos, documentos, cartões de crédito etc
+        -->
+
+        <!-- a função action nos remete à um script para onde vão os dados que faremos posteriormente-->
+
+        <!--com o autocomplete com valor off desligo a janela de sugestão de preenchimento do campo-->
+
+        <label for="inome">
+            <p>nome <input type="text" name="nome" id="inome"></p>
+        </label>
+        <p><label for="isobrenome">sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+
+
+        <!-- é necessário envelopar meu atributos como nome e sobrenome com a tag label e dar-lhe o valor de id que é importante para o html e css - para o php o importante é valor de name-->
+        <!-- para fazer um formulário simples usamos apenas a tag input "txt" e colocamos o valor, como no exemplo nome e sobrenome-->
+        <!-- para fazer o botão colocamos a tag input submit e colocamos o valor como por exemplo enviar-->
+
+    </form>
+</body>
+</html>
