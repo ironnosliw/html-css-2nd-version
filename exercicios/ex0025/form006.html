@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="color" id="icor">
+         </p>
+
+         <p>
+            <label for="isat">Nível de Satisfação:</label>
+            <input type="range" name="satis" id="isat" min="0" max="10" value="1">
+            <!--o valor value vai estabelecer o valor inicial do range-->
+            <!--a configuração de cor e range dependerá de cada navegador-->
+            <!--qdo for enviar arquivos com mais de 3000bites usar o valor post no method do form-->
+
+         </p>
+
+         <p>
+            <label for="ifoto">Foto do Perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+         </p>
+        
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Apagar">
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
