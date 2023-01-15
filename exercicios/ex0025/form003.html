@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+
+    <style>
+
+           * {
+              font-family: Arial, Helvetica, sans-serif;
+           }
+    </style>
+
+</head>
+<body>
+     <p>Teste de Formulário</p>
+
+     <form action="cadastro.php" method="get" autocomplete="on">
+
+     <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
+     </p>
+
+     <p>
+        
+        <label for="imedia">Média</label>
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+        <!-- se colocarmos o input do tipo text só aceitará letras, se o tipo for number só aceitará números, como do caso acima-->
+        <!--a propriedade min atribui um valor mínimo na caixa de entrada e a propriedade max um valor máximo-->
+        <!--o placeholder no caso nesse caso vai informar os limites numéricos-->
+        <!--o valor step informa de qto em qto os valores são aceitos; ou seja, de meio em meio ponto. Mas poderia ser um valor de 0.1 e assim a notação poderia ser p.e. 5.3, 8.7, 9.2 etc-->
+        
+     </p>
+
+     <p>
+        <label for="imes">Período letivo</label>
+        <input type="month" name="mes" id="imes">
+    </p>
+
+    <p>
+        <label for="idia">Dia da Prova</label>
+        <input type="date" name="dia" id="idia">
+    </p>
+
+    <p>
+        <label for="ihora">Hora da Prova</label>
+        <input type="time" name="hora" id="ihora">
+    </p>
+     
+     <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+     </p>
+
+    
+    </form>
+
+</body>
+</html>
