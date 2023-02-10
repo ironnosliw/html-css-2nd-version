@@ -14,11 +14,14 @@ html {
 
 }
 
-/* ao usar o dispositvo abaixo o menu é suprimido
+/* ao usar o dispositvo abaixo o menu é suprimido do modo impressão por ser desnecessário */
 
 menu {
       display: none;
-} */
+}
+
+
+/* qdo queremos mostrar a fonte do artigo usamos "depois de article, terá a seguinte mensagem expressa através do valor "content" */
 
 article::after {
                content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
