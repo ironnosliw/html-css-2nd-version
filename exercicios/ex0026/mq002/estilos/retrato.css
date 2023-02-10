@@ -3,5 +3,6 @@
 /* foto em pé - portrait */
 
 body {
-   background-color: brown;
+  background-image: url(../imagens/cev-portrait.jpg);
+  background-position: center bottom;
 }

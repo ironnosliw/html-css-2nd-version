@@ -12,7 +12,9 @@
 html, body {
             width: 100vw;
             height: 100vh;
-            background-color: #23ac35;
+            background-color: rgba(0, 0, 255, 0.524);
+            background-size: contain; /* a imagem é redimensionada para encaixar no espaço disponível */
+            background-repeat: no-repeat;
 }
 
 h1 {
